@@ -1,0 +1,25 @@
+{
+  "name": "paas-presentation",
+  "version": "1.0.0",
+  "description": "Präsentation für Architekturen für Businessysteme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talkdirty/paas-presentation.git"
+  },
+  "author": "Georg Grab, Kai Lappan, John Zielke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talkdirty/paas-presentation/issues"
+  },
+  "homepage": "https://github.com/talkdirty/paas-presentation#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-static": "^1.2.5",
+    "serve-index": "^1.9.1"
+  }
+}

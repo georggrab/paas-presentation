@@ -1,82 +1,100 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-    </head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-					<textarea data-template>
-						# PaaS
-						### Plattform as a Service
-						#### proudly presenting by
-						#### Georg Grab, Kai Lappan, John Zielke
-					</textarea>
+<head>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					# PaaS
+					### Plattform as a Service
+					#### proudly presenting by
+					Georg Grab, Kai Lappan, John Zielke
+				</textarea>
+			</section>
+			<section data-markdown>
+				### Agenda
+				* What is a PaaS?
+				* PaaS types and services
+				* Application Requirements
+				* Why PaaS
+				* Which technologies exist?
+				* When to use PaaS?
+				* Sources
+			</section>
+			<section>
+				<section>
+					<h3>What is a PaaS?</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SrwxAScdyT0?1end=42" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 				</section>
 				<section data-markdown>
-						<John Live Deployment Demo>
-						# Agenda [//]: # (Kai)
-						* What is a PaaS?[//]: # (Kai)
-						* Which technologies exist? [//]: # (Georg)
-						  - pros / cons
-						  - Heroku, AWS Elastic Beanstalk, Openshift, Ms Azure Service Fabric, Cloud Foundry
-						* When to use PaaS? [//]: # (Kai & John)
-							- pro's [//]: # (Kai)
-							  - easy to deploy application
-								- no infrastructure work involved
-								- fast scale-up with service discovery
-								- CI/CD often integrated
-								- easily extendable (monitoring, logging, databases....)
-							- contra's [//]: # (John)
-								- less flexibility than IAAS, more flex than CAAS
-							  - more expensive as IAAS (price camparison heroku / scaleway (IAAS))
-								- gets more expensive as app grows
-								- vendor lock in / opinionated / architecture dependance
-						* Sources
+					### Overview Cloud Services
+					![PaaS Ms Example](./images/paas_explained.png)
 				</section>
-					<section data-markdown>
-						# What is a PAAS?
-
-						[//]: # (Dienstleistung, welche in der Cloud eine Plattform
-						für Webapplikationen zur Verfügung stellt.
-						PaaS -> App Entwicklern
-						\-> Web Apps ohne sich um die Infrastktur kümmern zu müssen
-						\-> Fokus auf der Entwicklung	)
-						* public, private and hybrid
-						* communications Platform as a Service
-						[//]: # (voice, video, messaging)
-						* mobile platform as a service
-						* open PaaS
-						* PaaS for Rapid Development
-					</section>
-					<section data-markdown>
-						# Overview
-						![PaaS Ms Example](./images/paas_explained.png)
-					</section>
-					<section data-markdown>
-						# PaaS - Application Requirements
-						- application requirements
-						-. stateless
-						-. apps should be designed for ci deployment
-						-. sla? apps should be error tolerand (load balancing)
-					</section>
-
-					<section data-markdown>
-					</section>
-			</div>
+				<section>
+					<h3> PaaS types and services </h1>
+									<div style="text-align: left"
+						<p>Types</p>
+						<ul =>
+						  <li>public</li>
+						  <li>private</li>
+						  <li>hybrid</li>
+						</ul>
+					<hr>
+						<p>Services</p>
+						<ul >
+						  <li>communications Platform as a Service</li>
+						  <li>mobile platform as a service</li>
+						  <li>open PaaS</li>
+							<li>PaaS for Rapid Development</li>
+						</ul>
+				</section>
+				<section data-markdown>
+					### PaaS - Application Requirements
+					- stateless
+					- apps should be designed for ci deployment
+					- apps should be fault tolerant
+					- sla
+				</section>
+			</section>
+			<section data-markdown>
+				### Which technologies exist
+				- heroku
+				- openshift
+			</section>
+			<section data-markdown>
+				### When to use PaaS?
+				| pro's        	| con's         |
+				| ------------- |:-------------:|
+				| easy to deploy application      | less flexibility than IAAS, more flex than CAAS |
+				| no infrastructure work involved      | more expensive as IAAS      |
+				| fast scale-up with service discovery | gets more expensive as app grows      |
+				| CI/CD often integrated | gets more expensive as app grows|
+				| easily extendable (monitoring, logging, databases....) | vendor lock in / opinionated / architecture dependance |
+			</section>
+			<section data-markdown>
+				### Thank you for your attendance
+				### Questions?
+			</section>
+			<section data-markdown>
+				### Sources
+				https://azurecomcdn.azureedge.net/cvt-071850e1df650cde2e7fe4385df571432d9e22d6c33ea29d25c5ca260c03940a/images/page/overview/what-is-paas/what-is-paas.png
+			</section>
 		</div>
-		<script src="js/reveal.js"></script>
-		<script src="plugin/markdown/marked.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script>
-			Reveal.initialize({
-				markdown: {
+	</div>
+	<script src="js/reveal.js"></script>
+	<script src="plugin/markdown/marked.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script>
+	Reveal.initialize({
+		markdown: {
 
-				}
-			});
-		  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
-		  ':35729/livereload.js?snipver=1"></' + 'script>')
-		</script>
-	</body>
+		}
+	});
+	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+	':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+</body>
 </html>

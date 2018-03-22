@@ -15,24 +15,54 @@
 					</textarea>
 				</section>
 				<section data-markdown>
-						# Agenda
-						* What is a PaaS?
-						* Which technologies exist?
-						* When to use PaaS?
+						<John Live Deployment Demo>
+						# Agenda [//]: # (Kai)
+						* What is a PaaS?[//]: # (Kai)
+						* Which technologies exist? [//]: # (Georg)
+						  - pros / cons
+						  - Heroku, AWS Elastic Beanstalk, Openshift, Ms Azure Service Fabric, Cloud Foundry
+						* When to use PaaS? [//]: # (Kai & John)
+							- pro's [//]: # (Kai)
+							  - easy to deploy application
+								- no infrastructure work involved
+								- fast scale-up with service discovery
+								- CI/CD often integrated
+								- easily extendable (monitoring, logging, databases....)
+							- contra's [//]: # (John)
+								- less flexibility than IAAS, more flex than CAAS
+							  - more expensive as IAAS (price camparison heroku / scaleway (IAAS))
+								- gets more expensive as app grows
+								- vendor lock in / opinionated / architecture dependance
 						* Sources
 				</section>
 					<section data-markdown>
 						# What is a PAAS?
+
+						[//]: # (Dienstleistung, welche in der Cloud eine Plattform
+						für Webapplikationen zur Verfügung stellt.
+						PaaS -> App Entwicklern
+						\-> Web Apps ohne sich um die Infrastktur kümmern zu müssen
+						\-> Fokus auf der Entwicklung	)
+						* public, private and hybrid
+						* communications Platform as a Service
+						[//]: # (voice, video, messaging)
+						* mobile platform as a service
+						* open PaaS
+						* PaaS for Rapid Development
 					</section>
 					<section data-markdown>
-						![PaaS Ms Example](/images/paas_explained.png)
+						# Overview
+						![PaaS Ms Example](./images/paas_explained.png)
 					</section>
 					<section data-markdown>
-						## Application PaaS (aPaaS) / Stand Alone Umgebungen
-						### Integration and Governance PaaS (iPaaS)
-						### Add-on-Entwicklungsumgebungen
-						### Reine Anwendungsbereitstellung
-						### Offenes PaaS
+						# PaaS - Application Requirements
+						- application requirements
+						-. stateless
+						-. apps should be designed for ci deployment
+						-. sla? apps should be error tolerand (load balancing)
+					</section>
+
+					<section data-markdown>
 					</section>
 			</div>
 		</div>

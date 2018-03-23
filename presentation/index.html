@@ -17,9 +17,9 @@
 			<section data-markdown>
 				### Agenda
 				* What is a PaaS?
+				* Why should I use PaaS?
 				* PaaS types and services
 				* Application Requirements
-				* Why PaaS
 				* Which technologies exist?
 				* When to use PaaS?
 				* Sources
@@ -82,6 +82,61 @@
 									- IBM Bluemix
 									- Microsoft Azure
 									- Salesforce App Cloud
+								</section>
+								<section>
+									<section data-markdown>
+									### Heroku (the one we demo'ed)
+									- by Salesforce
+									- Extremely easy to set up; free tier
+									- Horizontal and Vertical scalability
+									- Managed databases
+									- Popular Programming Frameworks supported out of the box.
+									- Software available as add-on dynos
+								</section>
+
+									<section data-markdown>
+									### Heroku pricing examples
+									#### Dyno (Smallest deployable Unit)
+									- $25 for 512MB Ram, 1 vCore
+									- $200 for 2.5G Ram, 4 vCore
+									</section>
+								</section>
+								<section>
+									<section data-markdown>
+									### Openshift
+									* by Redhat
+									* very new (just out of Beta)
+									* free tier
+									* Managed Kubernetes
+									* Deployment of Kubernetes Pods
+									* Cluster extendable by addons
+									  - Chaos Monkeys!
+										- Logging, Ingress, Monitoring, ...
+								</section>
+									<section data-markdown>
+									### Openshift pricing
+									#### Very reasonable free tier:
+									* 1G Ram, 2 vCPU, burstable
+									#### Premium tier starting at $50
+									* 2G Ram, 4 vCPU
+									* $25/GiB Ram / month
+									* $1/Gib Persistant Storage / month
+									</section>
+								</section>
+								<section>
+									<section data-markdown>
+									### Amazon AWS Elastic Beanstalk
+									* Similar to Heroku in terms of supported Programming Languages / Frameworks.
+									* Beanstalk itself is completely free
+									* Pricing is translated to cost of underlying EC2 Instances / S3 Storage, ELB, ...
+								</section>
+								</section>
+								<section>
+									<section data-markdown>
+									### Azure
+									* AKS, which is managed Kubernetes
+									* App Service, which is similar to Heroku
+								</section>
 								</section>
 								<section data-markdown>
 									### When to use PaaS?

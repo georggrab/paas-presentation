@@ -2,6 +2,7 @@
 <head>
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/white.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="reveal">
@@ -10,7 +11,7 @@
 				<textarea data-template>
 					# PaaS
 					### Plattform as a Service
-					#### proudly presenting by
+					#### proudly presented by
 					Georg Grab, Kai Lappan, John Zielke
 				</textarea>
 			</section>
@@ -68,9 +69,9 @@
 								<ul =>
 									<li>stateless</li>
 									<li>designed for ci deployment</li>
-									<li> scalable</li>
-									<li> fault tolerant</li>
-									<li> of micorservice pattern</li>
+									<li>scalable</li>
+									<li>fault tolerant</li>
+									<li>using a micorservice pattern</li>
 									<div>
 									</section>
 								</section>
@@ -81,7 +82,6 @@
 									- Amazon Web Services (AWS)
 									- IBM Bluemix
 									- Microsoft Azure
-									- Salesforce App Cloud
 								</section>
 								<section>
 									<section data-markdown>
@@ -139,14 +139,21 @@
 								</section>
 								</section>
 								<section data-markdown>
-									### When to use PaaS?
-									| pro's        	| con's         |
-									| ------------- |:-------------:|
-									| easy to deploy application      | less flexibility than IAAS, more flex than CAAS |
-									| no infrastructure work involved      | more expensive as IAAS      |
-									| fast scale-up with service discovery | gets more expensive as app grows      |
-									| CI/CD often integrated | gets more expensive as app grows|
-									| easily extendable (monitoring, logging, databases....) | vendor lock in / opinionated / architecture dependance |
+									### When to use PaaS? - Pros
+									- Easy deployment of application
+									- No infrastructure work involved
+									- Fast scale-up with service discovery
+									- CI/CD often integrated
+									- Easily extendable (monitoring, logging, databases...)
+								</section>
+								<section data-markdown>
+									### When to use PaaS? - Cons
+									- Less flexibility compared to IAAS (but more than SAAS)
+									- More expensive than IAAS
+									- Sometimes special application requirements for scaling
+									- Vendor lock-in
+									- Opinionated
+									- Architecture dependance
 								</section>
 								<section data-markdown>
 									### Thank you for your attendance
